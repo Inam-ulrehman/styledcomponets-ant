@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          <Providers>{children}</Providers>
+          <useServerInsertedHTML>
+            <Providers>{children}</Providers>
+          </useServerInsertedHTML>
         </StyledComponentsRegistry>
       </body>
     </html>
