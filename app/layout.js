@@ -1,5 +1,6 @@
 import StyledComponentsRegistry from '@/lib/registry'
 import './globals.css'
+import 'antd/dist/reset.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
